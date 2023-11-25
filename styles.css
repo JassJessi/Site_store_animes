@@ -1,0 +1,25 @@
+h1 {
+    color: purple;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*#para reconhecer que é um id e o . para class*/
+#logo {
+    display: block;
+    /*centralizar imagem*/
+    margin: auto;
+    width: 180px;
+}
+
+.paragrafo {
+    text-align: center;
+}
+
+header .photo {
+    background: linear-gradient(#5ce1e6, #8c52ff);
+}
+
+header .prima {
+    background-color: #8c52ff;
+}
