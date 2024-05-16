@@ -1,0 +1,29 @@
+@media(maxx-width: 1280px) {
+
+    .photo {
+        padding: 30px;
+    }
+
+    .home{
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    gap: 30px;
+}
+
+    .home .descricao{
+        max-width: 100%;
+        text-align: center;
+        align-items: center; 
+    }
+
+ @media(max-width: 425px) {
+    .home .descricao h1 {
+        font-size: 30px;        
+    }
+    
+    .home .descricao p {
+        font-size: 16px;
+    }
+}
+}

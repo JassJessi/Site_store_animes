@@ -4,94 +4,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <link rel="icon" type="image/png" href="Logo_loja.png">
   <title>Yoru no Hanna</title>
 
+  <!--Importando bibliotecas externas-->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+  />
+
+  <!--Importando fontes do google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!--Conectando o CSS com o HTML-->
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/resposivo.css">
 </head>
 
 <body>
   <header>
-    <div class="photo">
-      <a href="https://www.instagram.com/yoru_no_hanna/"> <img id="logo" src="Logo_loja.png" alt="Logo da Yoru" /> </a>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar prima">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Início</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Produtos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Chaveiros</a></li>
-                <li><a class="dropdown-item" href="#">Marca Página</a></li>
-                <li><a class="dropdown-item">Mangás</li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Encomendar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link item" aria-current="page">Dúvidas</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
+      <nav class="menu">
+        <ul>
+          <li>
+                <a href="#produtos">Produtos</a>
+          </li>
+        </ul>
+      
+        <ul>
+          <li>
+                <a href="#loja">Contatos</a>
+          </li>
+        </ul>
+      
+        <ul>
+          <li>
+                <a href="#encomenda">Encomendar</a>
+          </li>
+        </ul>
+     
+        <ul>
+          <li>
+                <a href="#opiniao">Feedbacks</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+                <a href="#sobre">Yoru</a>
+          </li>
+        </ul>
     </nav>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Conheça a Yoru</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Nossos produtos</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>História da loja</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-      </div>
+  </header>
+
+  <section class="home">
+    <div class="descricao">
+        <h1> Olá seja bem-vinde a Yoru no Hanna!💜</h1>
+        <p> Somos uma loja virtual especializada em produtos de papelaria com temática de animes, jogos e dentre outros temas do universo nerd.🤓​</p>
+        <p>Estamos ainda em fase de crescimento, acolhendo sempre aos feedbacks de vocês. É novu por aqui?</p>
+        <p>Então fique a vontade para conhecer mais sobre o nosso trabalho por aqui 😸​</p>
+
+        <ul class="redes-sociais"> <!--Adicionando links para contato-->
+              <a href="https://wa.me/55038998439836" title="Enviar mensagem no WhatsApp" target="_blank"> 
+              <!--Redirecionando para outra janela após clicar sobre o icone-->
+                  <i class="fab fa-whatsapp"></i>
+              </a>
+          
+              <a href="https://www.facebook.com/profile.php?id=100092451158247" title="Ir para o Facebook" target="_blank"> 
+                  <i class="fab fa-facebook"></i>
+              </a>
+
+              <a href="https://www.instagram.com/yoru_no_hanna/" title="Ir para o Instagram" target="_blank"> 
+                  <i class="fab fa-instagram"></i>
+              </a>
+      </ul>
     </div>
 
-  </header>
-  <main>
-    <p class="paragrafo">Bem-vindo a Yoru no Hanna! Aqui você encontra produtos de anime e geek customizados do
-      jeito.</p>
-    <!--Paragráfo-->
-    <p class="paragrafo">Desça a página para baixo para conhecer mais sobre nós💜😸.</p>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
+    <div class="photo">
+      <div class="foto sombra-interna">
+        <img scr=".src/imagens/Logo_loja.png" alt="Logo da Yoru"/> 
+      </div>
+    </div>
+    
+    <button class="btn-mostrar-loja">Ver mais sobre a loja</button>
+  </section>
+
+  <script src="./src/js/index.js"></script>
+
 </body>
+
 <footer>
-  <p class="paragrafo">Acesse o nosso <a href="https://www.instagram.com/yoru_no_hanna/"> Instagram</a> e veja mais
-    sobre nossos
-    produtos💜.</p>
+  <p class="paragrafo">Acesse o nossas redes sociais e interjam conosco💜.</p>
 </footer>
 
 </html>
