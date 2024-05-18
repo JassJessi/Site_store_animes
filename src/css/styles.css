@@ -3,6 +3,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body{
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
@@ -10,15 +11,19 @@ body{
     background: linear-gradient(150deg, #5ce1e6, #8c52ff);
     background-size: 120% 120%;
 }
+ body header{
+        background-color: red;
+        box-shadow: 0px 3px 10px;
+ }
 
-.menu{
+.nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 15px;
+    padding: 1.5rem 6rem;
 }
 
-.menu{
+.nav-bar{
     width: 65px;
     height: 65px;
     text-decoration: underline;
@@ -26,18 +31,113 @@ body{
     transition: 0.2s;
 }
 
-.menu li{
+.nav-bar ul{
     font-size: 20px;
+    justify-content: center;
+    list-style: none;
     text-transform: capitalize;
     padding: 10px 20px;
 }
 
-.menu li a:hover{
+.nav-bar ul a:hover{
     background-color: #8c52ff;
     color: #fff;
     border-radius: 50px;
     transition: 0.2s;
 }
+
+.nav-bar .login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    list-style: none;
+}
+
+.nav-bar .login-button{
+    width: 65px;
+    height: 65px;
+    text-decoration: underline;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.nav-bar .login-button ul{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+
+.nav-bar .login-button ul a:hover{
+    background-color: #8c52ff;
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button{
+    border: none;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+} 
+
+.login-button button a{
+    text-decoration: none;
+    color: red;
+    font-weight: 500;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu-icon{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.mobile-menu .nav-item{
+    display: block;
+    padding-top: 1.2rem;
+}
+
+.mobile-menu .login-button{
+    display: block;
+    padding: 1rem 2rem;
+}
+
+.mobile-menu .login-button button{
+    width: 100%;
+}
+
+.open{
+    display: block;
+}
+
 
 .home{
     display: flex;
