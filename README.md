@@ -1,2 +1,2 @@
 # Site_store_animes
-Site de loja de produtos customizados de animes utilizando o framework BootStrap
+Site de loja de produtos customizados de animes utilizando o framework BootStrap, HTML, CSS e JavaScript.
