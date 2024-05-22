@@ -9,6 +9,19 @@ function menuShow(){
     }
 }
 
+function search(){
+    let input = document.getElementById('searchbar').value
+    input = input.toLowerCase()  //Indentificar palavras maiusculas e minusculas
+    let x = document.getElementsByClassName('produtos')
+
+    for(i = 0; i < x.length; i++){
+        if(!x[i].innerHTML.toLocaleLowerCase().includes(input)){
+            x[i].style.display = "none" 
+        }else{
+            x[i].style.display = "list-item"
+        }
+    }
+}
 
 const botaoMostrarLoja = document.querySelector('.btn-mostrar-loja');
 

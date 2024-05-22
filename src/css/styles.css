@@ -46,6 +46,13 @@ body{
     transition: 0.2s;
 }
 
+.menu .produtos{
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+/*procurar função para esconder a lista após a pesquisa*/
+
 .nav-bar .login-button{
     display: flex;
     justify-content: center;
@@ -95,7 +102,7 @@ body{
 
 .login-button button a{
     text-decoration: none;
-    color: red;
+    color: rgb(0, 4, 255);
     font-weight: 500;
 }
 
